@@ -1,0 +1,99 @@
+.sidebar-populer .recipe-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sidebar-populer-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+.sidebar-populer .recipe-list-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 24px;
+  gap: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.sidebar-populer .recipe-list-item:hover {
+  transform: scale(1.02);
+}
+
+.sidebar-populer .recipe-box-img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.sidebar-populer .recipe-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+}
+
+.sidebar-populer .recipe-box-title {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: bold;
+  color: var(--text-color);
+  text-transform: uppercase;
+}
+
+.sidebar-populer .recipe-box-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33333;
+  color: rgba(5, 5, 5, 0.8);
+}
+body[data-theme='dark'] .sidebar-populer .recipe-box-text {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* TABLET STYLE */
+@media (min-width: 768px) and (max-width: 1279px) {
+  .sidebar-populer-title {
+    font-size: 18px;
+    line-height: 1.33333;
+    margin-bottom: 32px;
+  }
+
+  .sidebar-populer .recipe-list-item {
+    gap: 12px;
+    margin-bottom: 18px;
+  }
+  .sidebar-populer .recipe-box-img {
+    width: 60px;
+    height: 60px;
+  }
+  .sidebar-populer .recipe-box-title {
+    font-size: 14px;
+  }
+  .sidebar-populer .recipe-box-text {
+    font-size: 10px;
+  }
+}
+
+/* MOBİLE STYLE */
+@media (max-width: 767px) {
+  .sidebar-populer .recipe-box {
+    align-items: flex-start;
+  }
+  .sidebar-populer .recipe-box-title {
+    font-size: 0.98rem;
+  }
+  .sidebar-populer .recipe-box-text {
+    font-size: 0.88rem;
+  }
+}
+/* MOBILE: sadece 2 item göster */
+@media (max-width: 767px) {
+  .sidebar-populer .recipe-list-item:nth-child(n+3) {
+    display: none;
+  }
+}
