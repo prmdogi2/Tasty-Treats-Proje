@@ -27,7 +27,7 @@
 /* GRADIENT OVERLAY */
 
 .recipe-card::after {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
   background: linear-gradient(
@@ -125,7 +125,7 @@
 /* ACTIVE (FAVORITED) */
 
 .recipe-card-favorite.is-active {
-  background:transparent;
+  background: transparent;
   color: #fff;
 }
 
@@ -213,7 +213,6 @@
   padding: 60px 20px;
   gap: 24px;
 }
-
 
 .favorites-empty-text {
   max-width: 481px;
